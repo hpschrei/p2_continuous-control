@@ -1,7 +1,5 @@
 '''
-The code is referred from
-1. https://github.com/udacity/deep-reinforcement-learning/tree/master/ddpg-pendulum
-
+The code is based on https://github.com/udacity/deep-reinforcement-learning/tree/master/ddpg-pendulum.
 '''
 
 

@@ -1,11 +1,7 @@
 '''
-The code is referred from
-1. https://github.com/MorvanZhou/pytorch-A3C/blob/master/continuous_A3C.py
-2. https://github.com/ShangtongZhang/DeepRL/blob/master/deep_rl/network/network_heads.py
+The code is based on https://github.com/MorvanZhou/pytorch-A3C/blob/master/continuous_A3C.py and
+https://github.com/ShangtongZhang/DeepRL/blob/master/deep_rl/network/network_heads.py
 '''
-
-
-
 
 import numpy as np
 
@@ -13,11 +9,9 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F 
 
-
-
 N_INPUTS = 33
 N_ACTIONS = 4
-GAMMA = 0.99 # reward discount rate
+GAMMA = 0.99
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 

@@ -1,7 +1,5 @@
 '''
-The code is referred from
-1. https://github.com/udacity/deep-reinforcement-learning/tree/master/ddpg-pendulum
-
+The code is based on https://github.com/udacity/deep-reinforcement-learning/tree/master/ddpg-pendulum.
 '''
 
 import torch
@@ -11,8 +9,7 @@ import numpy as np
 
 def hidden_init(layer):
     '''
-    Provide fan in (the number of input units) of each hidden layer
-    as the component of normalizer.
+    Provide the layer for the normalization step.
 
     :param
         layer: hidden layer
@@ -52,7 +49,7 @@ class Actor(nn.Module):
         self.fc3.weight.data.uniform_(-3e-3, 3e-3)
 
     def forward(self, state):
-        '''Build an actor (policy) network that maps state to actions
+        '''Build an actor (policy) network that maps states to actions
 
         :return:
             actions (batch_size, action_size; tensor): being limited within range (-1,1)

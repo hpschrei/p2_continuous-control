@@ -1,6 +1,5 @@
 '''
-The code is referred from
-1. https://github.com/PacktPublishing/Deep-Reinforcement-Learning-Hands-On/tree/master/Chapter14
+The code is based on https://github.com/PacktPublishing/Deep-Reinforcement-Learning-Hands-On/tree/master/Chapter14.
 '''
 
 import torch
